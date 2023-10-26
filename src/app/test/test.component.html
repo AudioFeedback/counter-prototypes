@@ -1,0 +1,17 @@
+<main class="flex min-h-screen flex-col items-center justify-between p-24">
+    <h1 class="text-3xl">Testpage</h1>
+    <div class="text-center">
+      <h2>Your count is:</h2>
+      <h2 class="text-7xl">{{ counter }}</h2>
+    </div>
+    <div class="flex flex-col gap-4">
+      <button class="border-white border-4 w-64 h-12" (click)="add()">
+        Increment
+      </button>
+      <button class="border-white border-4 w-64 h-12" (click)="subtract()">
+        Decrement
+      </button>
+      <button class="border-white border-4 w-64 h-12" (click)="reset()">Reset</button>
+      <button class="flex place-items-center justify-center" routerLink="/" routerLinkActive="active">Homepage</button>
+    </div>
+</main> 
